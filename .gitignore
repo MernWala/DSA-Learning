@@ -1,1 +1,3 @@
-.class
+[a-z | A-Z]*.class
+Solution.java
+temp.java

@@ -30,33 +30,24 @@ public class BracesBalance {
     }
 
     public boolean openingBraces(char ch) {
-        if (ch == '(' || ch == '[' || ch == '{')
-            return true;
-        else
-            return false;
+        return ch == '(' || ch == '[' || ch == '{';
     }
 
     public boolean closingBraces(char ch) {
-        if (ch == ')' || ch == ']' || ch == '}')
-            return true;
-        else
-            return false;
+        return ch == ')' || ch == ']' || ch == '}';
     }
 
     public boolean sameTypeClosing(char previous, char next) {
         if (previous == '(' && next == ')'){
             pop(next);
             return true;
-        }
-        else if (previous == '[' && next == ']'){
+        }else if (previous == '[' && next == ']'){
             pop(next);
             return true;
-        }
-        else if (previous == '{' && next == '}'){
+        }else if (previous == '{' && next == '}'){
             pop(next);
             return true;
-        }
-        else
+        }else
             return false;
     }
 
