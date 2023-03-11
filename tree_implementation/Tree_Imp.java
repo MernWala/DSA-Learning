@@ -1,5 +1,3 @@
-package tree_implementation;
-
 public class Tree_Imp {
     Node root;
 
@@ -48,19 +46,5 @@ public class Tree_Imp {
         ti.preOrder(ti.root);
         System.out.println();
         ti.postOrder(ti.root);
-    }
-}
-
-class Node {
-    int data;
-    Node left, right;
-
-    Node() {
-    }
-
-    Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
     }
 }

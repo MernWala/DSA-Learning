@@ -26,6 +26,7 @@ public class Queue {
         }
     }
 
+    // insertion
     public void enqueue(int a) {
         if (isFull()) {
             System.out.println("Queue is Full");
@@ -36,6 +37,7 @@ public class Queue {
         }
     }
 
+    // delete
     public void dqueue() {
         if (isEmpty()) {
             System.out.println("Queue is already empty");
