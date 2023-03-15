@@ -1,5 +1,7 @@
-[a-z | A-Z]*.class
+.class
 Solution.java
 temp.java
 [a-z | A-Z]*revision.java
 [a-z | A-Z]*revision.class
+/Revision
+/Revision/*

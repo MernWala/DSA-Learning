@@ -42,6 +42,6 @@ public class stack {
             System.out.print("Do you want to exit: ");
             ans = sc.next().charAt(0);
         }
-
+        sc.close();
     }
 }

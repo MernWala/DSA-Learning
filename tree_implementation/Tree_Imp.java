@@ -1,11 +1,11 @@
 public class Tree_Imp {
-    Node root;
+    Root root;
 
     Tree_Imp() {
         this.root = null;
     }
 
-    void inOrder(Node node) {
+    void inOrder(Root node) {
         if (node == null)
             return;
 
@@ -14,7 +14,7 @@ public class Tree_Imp {
         inOrder(node.right);
     }
 
-    void preOrder(Node node) {
+    void preOrder(Root node) {
         if (node == null)
             return;
 
@@ -23,7 +23,7 @@ public class Tree_Imp {
         preOrder(node.right);
     }
 
-    void postOrder(Node node) {
+    void postOrder(Root node) {
         if (node == null)
             return;
 
@@ -35,11 +35,11 @@ public class Tree_Imp {
     public static void main(String[] args) {
         Tree_Imp ti = new Tree_Imp();
 
-        ti.root = new Node(1);
-        ti.root.left = new Node(12);
-        ti.root.right = new Node(2);
-        ti.root.left.left = new Node(5);
-        ti.root.right.right = new Node(6);
+        ti.root = new Root(1);
+        ti.root.left = new Root(12);
+        ti.root.right = new Root(2);
+        ti.root.left.left = new Root(5);
+        ti.root.right.right = new Root(6);
 
         ti.inOrder(ti.root);
         System.out.println();

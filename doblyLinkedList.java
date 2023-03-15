@@ -81,11 +81,6 @@ public class doblyLinkedList {
     }
 
     Node mergeThenSort(Node a, Node b){
-        Node temp1 = a;
-        Node temp2 = b;
-
-        
-
         return null;
     }
 

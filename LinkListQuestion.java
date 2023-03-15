@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashSet;
+
 class Node {
     int data;
     Node next;
@@ -244,6 +245,8 @@ public class LinkListQuestion {
         return header.next;
     }
 
+    // Write a function that return a reversed linked list
+
     public static void main(String[] args) {
         LinkListQuestion obj = new LinkListQuestion();
 
@@ -252,14 +255,7 @@ public class LinkListQuestion {
         obj.insertAtTail(2);
         obj.insertAtTail(3);
         obj.insertAtTail(3);
-
         obj.traverse();
-        Node list = obj.deleteDuplicates(obj.head);
-
-        // Node list = obj.removeParticualVal(obj.head, 11);
-        while (list != null) {
-            System.out.print(list.data + " ");
-            list = list.next;
-        }
+        
     }
 }
